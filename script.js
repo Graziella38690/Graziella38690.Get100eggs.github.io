@@ -10,19 +10,24 @@
        - Ce sera alors le tour de l’autre joueur. -Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour. 
        - Le premier joueur qui atteint les 100 points sur global gagne le jeu.
   */
+let dice=$('#dice');
 let globalFirstPlayer = $('#globalFirstPlayer');
 let globalSecondPlayer = $('#globalSecondPlayer');
 let currentFirstPlayer = $('#currentFirstPlayer');
 let currentSecondPlayer = $('#currentFirstPlayer');
 const firstPlayer = $('#firstPlayer');
 const secondPlayer =$('#secondPlayer');
-let randomNumber= Math.floor(Math.random() * 6) + 1;
+const roll = $('#roll');
+const hold = $('#hold');
+let randomNumber = $('#randomNumber');
+let players=[firstPlayer, secondPlayer];
+let scoreSecondPlayer=0;
+let scoreFirstPlayer=0;
+let playing = firstPlayer;
+const scoreToWin = 100;
 
-
-console.log(randomNumber);
-
-
-
-
-
-
+(function(){
+$('#roll').clik(function(){
+alert('vous avez cliqué sur le bouton')
+})
+})
