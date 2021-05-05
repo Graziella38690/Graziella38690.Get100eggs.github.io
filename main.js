@@ -28,13 +28,15 @@ let playing = firstPlayer;
 const scoreToWin = 100;
 
 $('#roll').click(function(){
-
 let randomNumber = Math.floor(Math.random() * 6) + 1;
-
 $('#score').html(randomNumber); 
-
-console.log(randomNumber);
+$('#dice').attr ('src','./image/'+ randomNumber+ '.svg'); 
 });
+
+
+
+
+
 
 
 });
