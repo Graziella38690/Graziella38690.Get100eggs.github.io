@@ -27,32 +27,6 @@ let playing = firstPlayer;
 const scoreToWin = 100;
 
 
-function init () {
-  let globalFirstPlayer = 10;
-  let globalSecondPlayer = 5;
-  let roundFirstPlayer = 8;
-  let roundSecondPlayer = 7;
-  $('#globalFirstPlayer').html(globalFirstPlayer ); 
-  $('#globalSecondPlayer').html(globalSecondPlayer );
-  $('#roundFirstPlayer').html(roundFirstPlayer ); 
-  $('#roundSecondPlayer').html(roundSecondPlayer );
-}
-
-
-
-
-
-$('#newGame').click(function (){
- init()
- let playing = firstPlayer;
- console.log(playing);
-  });
-
-
-
-
-
-
 
 
 // Lancer du dés
@@ -62,13 +36,40 @@ $('#roll').click(function(){
   $('#score').html(randomNumber); 
   $('#dice').attr ('src','./image/'+ randomNumber+ '.svg'); 
   
-  
-
+  if(randomNumber>1){
+   
+    roundFirstPlayer = roundFirstPlayer += randomNumber;
+    $('#roundFirstPlayer').html(roundFirstPlayer ); 
+  }
+    else
+            init();
+    
+    
+ 
   });
   
 
 
 
+
+  function init () {
+    let globalFirstPlayer = 10;
+    let globalSecondPlayer = 5;
+    let roundFirstPlayer = 8;
+    let roundSecondPlayer = 7;
+    $('#globalFirstPlayer').html(globalFirstPlayer ); 
+    $('#globalSecondPlayer').html(globalSecondPlayer );
+    $('#roundFirstPlayer').html(roundFirstPlayer ); 
+    $('#roundSecondPlayer').html(roundSecondPlayer );
+  }
+
+
+
+  $('#newGame').click(function (){
+    init()
+    let playing = firstPlayer;
+   
+     });
 
 
 });
