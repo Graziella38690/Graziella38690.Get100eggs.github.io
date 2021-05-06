@@ -15,25 +15,57 @@ $(function () {
 let dice = $('#dice');
 let globalFirstPlayer = $('#globalFirstPlayer');
 let globalSecondPlayer = $('#globalSecondPlayer');
-let currentFirstPlayer = $('#currentFirstPlayer');
-let currentSecondPlayer = $('#currentFirstPlayer');
+let roundFirstPlayer = $('#roundFirstPlayer');
+let roundSecondPlayer = $('#roundSecondPlayer');
 const firstPlayer = $('#firstPlayer');
 const secondPlayer =$('#secondPlayer');
 const roll = $('#roll');
 const hold = $('#hold');
+const newgame = $('#newGame');
 let players=[firstPlayer, secondPlayer];
-let scoreSecondPlayer=0;
-let scoreFirstPlayer=0;
 let playing = firstPlayer;
 const scoreToWin = 100;
 
+
+function init () {
+  let globalFirstPlayer = 10;
+  let globalSecondPlayer = 5;
+  let roundFirstPlayer = 8;
+  let roundSecondPlayer = 7;
+  $('#globalFirstPlayer').html(globalFirstPlayer ); 
+  $('#globalSecondPlayer').html(globalSecondPlayer );
+  $('#roundFirstPlayer').html(roundFirstPlayer ); 
+  $('#roundSecondPlayer').html(roundSecondPlayer );
+}
+
+
+
+
+
+$('#newGame').click(function (){
+ init()
+ let playing = firstPlayer;
+ console.log(playing);
+  });
+
+
+
+
+
+
+
+
+// Lancer du dés
 $('#roll').click(function(){
-let randomNumber = Math.floor(Math.random() * 6) + 1;
-$('#score').html(randomNumber); 
-$('#dice').attr ('src','./image/'+ randomNumber+ '.svg'); 
-});
 
+  let randomNumber = Math.floor(Math.random() * 6) + 1;
+  $('#score').html(randomNumber); 
+  $('#dice').attr ('src','./image/'+ randomNumber+ '.svg'); 
+  
+  
 
+  });
+  
 
 
 
