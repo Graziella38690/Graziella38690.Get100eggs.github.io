@@ -3,19 +3,25 @@
 //
 //
 
+
+
+
 init()
+
 document.getElementById("newGame").onclick= init;
+document.getElementById("roll").onclick= roll;
+document.getElementById("hold").onclick= hold;
+
 
 function init() {
   
-  globalFirstPlayer = 10;
-  roundFirstPlayer = 5;
-  globalSecondPlayer= 52;
-  roundSecondPlayer= 15;
+  globalFirstPlayer = 0;
+  roundFirstPlayer = 0;
+  globalSecondPlayer= 0;
+  roundSecondPlayer= 0;
   score=0;
-  scorewin=100;
   gameOn=true;
-  activePlayer=1;
+  activePlayer=2;
   
 document.querySelector('#dice').style.display = 'none';
 document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;
@@ -24,14 +30,6 @@ document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
 document.querySelector('#roundSecondPlayer').textContent=  roundSecondPlayer;
 document.querySelector('#score').textContent= score;
 }
-
-
-
-document.getElementById("roll").onclick= roll;
-document.getElementById("hold").onclick= hold;
-
-
-
 
 function roll(){
   // 1. Random number
@@ -62,8 +60,6 @@ document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
 
 }
 };
-
-
 
 
 function hold(){
