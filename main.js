@@ -16,9 +16,9 @@ document.getElementById("hold").onclick= hold;
 
 function init() {
   
-  globalFirstPlayer = 99;
+  globalFirstPlayer = 0;
   roundFirstPlayer = 0;
-  globalSecondPlayer= 99;
+  globalSecondPlayer= 0;
   roundSecondPlayer= 0;
   score=0;
   gameOn=true;
@@ -136,7 +136,7 @@ function nextgame(){
 
 
   if (activePlayer==1) {
-    document.querySelector('#firstPlayer').textContent= "joueur 1 gagne!";
+    document.querySelector('#firstPlayer').textContent= "joueur 1 gagne! à toi de rejouer";
     document.querySelector('#secondPlayer').textContent= "joueur 2 à perdu!";
    
     
