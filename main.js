@@ -3,32 +3,32 @@
 //
 //
 init() 
+
 document.getElementById("newGame").onclick= init; 
 document.getElementById("roll").onclick= roll;
 document.getElementById("hold").onclick= hold; 
 document.getElementById("volumes").onclick= onoff; 
 
 function init() { 
-   
+ 
   globalFirstPlayer = 0;
   roundFirstPlayer = 0;
   globalSecondPlayer= 0;
   roundSecondPlayer= 0;
   score=0;
-  gameOn=true;
   activePlayer=1;
-  soundDice = 1;
   Player2.style.opacity = "1";
   Player1.style.opacity = "1";
-
-
-document.querySelector('#dice').style.display = 'none';
+  soundDice = 1;
+  onoffinit()
+  
 document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;  
 document.querySelector('#globalSecondPlayer').textContent= globalSecondPlayer;
 document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
 document.querySelector('#roundSecondPlayer').textContent=  roundSecondPlayer;
 document.querySelector('#score').textContent= score;
 document.querySelector('#firstPlayer').textContent= "joueur 1 à toi de jouer!";
+
 
 }
 
@@ -151,15 +151,21 @@ function nextgame(){
 }
 }
 
+function onoffinit(){
+  if (soundDice == 1) {
+  son.src ="./image/son.png";
+  }else if (soundDice==0) {
+
+  son.src ="./image/sonoff.png";
+}
+}
+
 
 function onoff(){
   if (soundDice == 1) {
-  
-  
   soundDice = soundDice-1 ;
   son.src ="./image/sonoff.png";
   }else if (soundDice==0) {
-
   soundDice = soundDice+1;
   son.src ="./image/son.png";
 }

@@ -1,4 +1,11 @@
 
+html{
+    scroll-behavior: smooth; /*Navigation douce dans la page*/
+    
+    background-color: rgb(156, 247, 242);
+    
+}
+
 h1,h2,h3,h4,h5,h6 footer ,header{
     text-align: center;
     color: #000000;
@@ -13,17 +20,13 @@ h1{
 }
 
 body {
-    background-color: rgb(43, 137, 226);
+    background-color: transparent;
   
     
 }
-#volumes
-{ 
-   background-color: transparent;
-   border: none;
-    top: 120px; 
-    
-}
+
+
+
 
 #dice1 
 { 
@@ -31,19 +34,51 @@ body {
     /* width: 50%;
     height: 50% */
 }
-.btn {
-    margin-bottom:15px;
-    text-align: center;
+#roll,#hold{
+width: 100px;
+height: 50px;
 }
 
+.btn {
+	box-shadow:inset 0px 1px 0px -2px #a6827e;
+	background:linear-gradient(to bottom, #a0805e 5%, #886846 100%);
+	background-color:#57422b;
+	border-radius:12px;
+	border:4px solid #68451c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    margin: 5px;
+	
+	
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #57422b 5%, #856a4e 100%);
+	background-color:#57422b;
+    border:4px solid #68451c;
+
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+        
+.card{
+    background-color: rgb(202, 50, 50);
+   
+
+  }
 
 .elementscard img{
     width: 100%;
     height: 400px;
   }
-  .elementscard{
-    padding:20px 0; 
+.elementscard{
+   
     text-align : center;
+
+   
 
   }
 
