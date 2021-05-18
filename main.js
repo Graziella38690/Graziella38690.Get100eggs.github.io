@@ -20,6 +20,8 @@ function init() {
   Player2.style.opacity = "1";
   Player1.style.opacity = "1";
   soundDice = 1;
+  FirstPlayerWin=0;
+  SecondPlayerWin=0;
   onoffinit()
   
 document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;  
@@ -45,7 +47,7 @@ function roll(){
     roundFirstPlayer=roundFirstPlayer + randomnumber;
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer; 
     document.querySelector('#firstPlayer').textContent= "joueur 1 à toi de jouer!"; 
-    document.querySelector('#secondPlayer').textContent= "";
+    document.querySelector('#secondPlayer').textContent= "joueur 2";
     Player2.style.opacity = "0.5";
     Player1.style.opacity = "1";
    }else if ((activePlayer==1)&&(randomnumber==1)){
@@ -54,7 +56,7 @@ function roll(){
     activePlayer=activePlayer+1; 
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
     document.querySelector('#secondPlayer').textContent= "joueur 2 à toi de jouer!";
-    document.querySelector('#firstPlayer').textContent= "";
+    document.querySelector('#firstPlayer').textContent= "joeur 1";
     Player2.style.opacity = "1";
     Player1.style.opacity = "0.5";
 
@@ -62,7 +64,7 @@ function roll(){
     roundSecondPlayer=roundSecondPlayer + randomnumber;
     document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
     document.querySelector('#secondPlayer').textContent= "joueur 2 à toi de jouer!";
-    document.querySelector('#firstPlayer').textContent= "";
+    document.querySelector('#firstPlayer').textContent= "joueur 1";
     Player2.style.opacity = "1";
     Player1.style.opacity = "0.5";
     
@@ -73,7 +75,7 @@ roundSecondPlayer=0;
 activePlayer=activePlayer-1;
 document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
 document.querySelector('#firstPlayer').textContent= "joueur 1 à toi de jouer!";
-document.querySelector('#secondPlayer').textContent= "";
+document.querySelector('#secondPlayer').textContent= "joueur 2";
 Player1.style.opacity = "1";
 Player2.style.opacity = "0.5";
 }
@@ -86,9 +88,9 @@ function hold(){
   document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer;
   document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
   document.querySelector('#firstPlayer').textContent= "joueur 1 à toi de jouer!";
-  document.querySelector('#secondPlayer').textContent= "";
+  document.querySelector('#secondPlayer').textContent= "joueur 2";
   Player1.style.opacity = "1";
-Player2.style.opacity = "0.5";
+  Player2.style.opacity = "0.5";
   activePlayer= 2
   nextround()
 } else if ((activePlayer==1)&&(globalFirstPlayer+roundFirstPlayer>=100)){
@@ -111,17 +113,17 @@ Player2.style.opacity = "0.5";
 }
 
 function nextround(){
-  document.querySelector('#dice').style.display = 'none';
+  
 
   if (activePlayer==1) {
     document.querySelector('#firstPlayer').textContent= "joueur 1 à toi de jouer!";
-    document.querySelector('#secondPlayer').textContent= "";
+    document.querySelector('#secondPlayer').textContent= "joueur 2";
     Player1.style.opacity = "1";
     Player2.style.opacity = "0.5";
   } else {
 
   document.querySelector('#secondPlayer').textContent= "joueur 2 à toi de jouer!";
-  document.querySelector('#firstPlayer').textContent= "";
+  document.querySelector('#firstPlayer').textContent= "joueur 1";
   Player2.style.opacity = "1";
   Player1.style.opacity = "0.5";
 }
@@ -133,7 +135,6 @@ function nextgame(){
   globalSecondPlayer= 0;
   roundSecondPlayer= 0;
   score=0;
-  document.querySelector('#dice').style.display = 'none';
   document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;
   document.querySelector('#globalSecondPlayer').textContent= globalSecondPlayer;
   document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
@@ -144,10 +145,13 @@ function nextgame(){
     document.querySelector('#firstPlayer').textContent= "joueur 1 gagne! à toi de rejouer";
     document.querySelector('#secondPlayer').textContent= "joueur 2 à perdu!";
     
+    
+    
   } else if (activePlayer==2) {
 
   document.querySelector('#firstPlayer').textContent= "joueur 1 à perdu !";
-  document.querySelector('#secondPlayer').textContent= "joueur 2 gagne! à toi de rejouer";   
+  document.querySelector('#secondPlayer').textContent= "joueur 2 gagne! à toi de rejouer";  
+
 }
 }
 
