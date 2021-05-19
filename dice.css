@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.container {
+.containerdice {
   width: 200px;
   height: 200px;
   perspective: 1000px;
@@ -16,10 +16,12 @@
 .cube {
 
   width: 100%;
-  height: 100%;
+  height: 400%;
   position: relative;
   transform-style: preserve-3d;
   animation: spin 5s infinite linear;
+  transform: translateZ(-100px);
+  transition: transform 1s;
 }
 
 .face {
@@ -29,42 +31,34 @@
   background-color: rgb(255, 255, 255);
 }
 
-.top {
-    background:url(./image/1.svg);
-  transform: rotateX(90deg) translateZ(100px);
-}
-.bottom {
-    background:url(./image/2.svg);
 
-  transform: rotateX(-90deg) translateZ(100px);
-}
 
-.right {
-    background:url(./image/3.svg);
+.front  { background: url(./image/1.svg); }
+.right  { background: url(./image/2.svg); }
+.back   { background: url(./image/3.svg); }
+.left   { background: url(./image/4.svg); }
+.top    { background: url(./image/5.svg); }
+.bottom { background: url(./image/6.svg); }
 
-  transform: rotateY(90deg) translateZ(100px);
-}
-.left {
-    background:url(./image/4.svg);
-  transform: rotateY(-90deg) translateZ(100px);
-}
+.front  { transform: rotateY(  0deg) translateZ(100px); }
+.right  { transform: rotateY( 90deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top    { transform: rotateX( -90deg) translateZ(100px); }
+.bottom { transform: rotateX(90deg) translateZ(100px); }
 
-.front {
-background:url(./image/5.svg);
-
-  transform: rotateX(0deg) translateZ(100px);
-}
-.back {
-  background:url(./image/6.svg);
-  transform: rotateX(-180deg) translateZ(100px);
-}
 
 @keyframes spin {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
+  0% {
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+            transform: rotate3d(1, 1, 0, 0deg);
   }
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
+  50% {
+    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+            transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+            transform: rotate3d(1, 1, 0, -360deg);
   }
 }
-url(./image/main.jpg)no-repeat 50% 50%;

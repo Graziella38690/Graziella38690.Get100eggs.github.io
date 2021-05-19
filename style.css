@@ -62,7 +62,7 @@ margin-top: 10px;
         
 .card{
     background-color: rgb(129, 62, 22,0.5);
-  
+    border: 1px solid  rgb(129, 62, 22);
    border-radius: 25px;
    height: 600px;
   }
@@ -80,4 +80,23 @@ margin-top: 10px;
    
     text-align : center;
   }
- 
+  .modal-content {
+    background-color:rgb(255, 255, 255);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid  rgb(129, 62, 22);
+    border-radius: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.close:hover,
+.close:focus {
+  color: rgb(129, 62, 22);
+  text-decoration: none;
+  cursor: pointer;
+}

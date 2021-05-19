@@ -23,7 +23,7 @@ function init() {
   FirstPlayerWin=0;
   SecondPlayerWin=0;
   onoffinit()
-  
+
 document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;  
 document.querySelector('#globalSecondPlayer').textContent= globalSecondPlayer;
 document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
@@ -193,3 +193,17 @@ function loosersound(){
   audiolooser.play()
   }
   }
+
+let rulesModal = document.getElementById("rulesModal");
+let Rules = document.getElementById("Rules");
+let closeRules = document.getElementsByClassName("closeRules")[0];
+
+    
+Rules.onclick = function(e) {
+  e.preventDefault();
+  rulesModal.style.display = "block";
+}
+
+closeRules.onclick = function() {
+  rulesModal.style.display = "none";
+}
