@@ -1,103 +1,100 @@
-
-html{
-    scroll-behavior: smooth; /*Navigation douce dans la page*/
+@font-face 
+{
+font-family: "Lato";
+src: url("./font/Lato-Italic.ttf");
 }
-
-h1,h2,h3,h4,h5,h6 footer ,header{
-    text-align: center;
-    color: #000000;
-    font-size: 1,5em;
+html{
+    scroll-behavior: smooth; /*Navigation douce dans la page*/ 
+}
+body {
+  background-color: rgb(129, 62, 22);
+  scroll-behavior: smooth; /*Navigation douce dans la page*/
+  font-family: 'Lato', sans-serif;
+  color: rgb(26, 24, 24);
 }
 
 h1{
-    font-size: 3em;
+  font-size: 3em;
+  text-align: center;
 }
+
+h2,h3,h4,h5,h6 footer ,header{
+    text-align: center;
+    font-size: 1,5em;
+}
+
+/*-- Réglage des card --*/
 .card {
-    border: NONE;
-    background-color: rgb(255, 255, 255, 0.9);
-    border: px solid  rgb(129, 62, 22);
-   border-radius: 25px;
-   height: 600px;
+  border: NONE;
+  background-color: rgb(255, 255, 255, 0.9);
+  border: px solid  rgb(129, 62, 22);
+  border-radius: 25px;
+  height: 700px;
+   
 }
-
-body {
-    
-    background: url(./image/fond.jpg)no-repeat 50% 50%;
-
-
+.elementscard img{
+  width: 100%;
+  height: 400px;
 }
-
+.elementscard{
+  text-align : center;
+}
 
 #roll,#hold{
 width: 100px;
 height: 50px;
 margin: 0 auto;
 margin-top: 10px;
-
-
 }
 
+/*-- Réglage des boutons --*/
 .btn {
 	box-shadow:inset 0px 1px 0px -2px #a6827e;
-
 	background:linear-gradient(to bottom, #97441e 5%, #c96f10 100%);
 	background-color:#57422b;
 	border-radius:12px;
 	border:4px solid #8b500c;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
   margin-bottom: 10px;
   margin-top: 10px;
-   
-  
-	
 }
+
 .btn:hover {
 	background:linear-gradient(to bottom, #965c1e 5%, #6e3f0c 100%);
 	background-color:#57422b;
     border:4px solid #68451c;
-
 }
+
 .btn:active {
 	position:relative;
 	top:1px;
 }
 
-#stars2
+/*-- réglages global --*/
+#globalFirstPlayer,#globalSecondPlayer,#roundFirstPlayer,#roundSecondPlayer{
+color: rgb(43, 42, 42);
+}
+
+#stars1,#stars2
 {
    width: 30px;
    height: 30px;
- }
+}
 
-
-  #stars1
-  {
-     width: 30px;
-     height: 30px;
-   }
-
-
- #dice 
- {
+ #dice , #egg
+{
     width: 100%;
-    height: 400px;
-  }
-.elementscard img{
-    width: 100%;
-    height: 400px;
-  }
-.elementscard{
-   
-    text-align : center;
-  }
-  .modal-content {
-    background-color:rgb(255, 255, 255);
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid  rgb(129, 62, 22);
-    border-radius: 20px;
-    width: 80%; /* Could be more or less, depending on screen size */
+    height: 200px;
+}
+
+.modal-content {
+  background-color:rgb(255, 255, 255);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid  rgb(129, 62, 22);
+  border-radius: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
   }
   .close {
     color: black;
@@ -111,12 +108,18 @@ margin-top: 10px;
   text-decoration: none;
   cursor: pointer;
 }
+
 .infoJoueur {
     width: 100%;
     height: 120px;
     background-color:rgb(255, 255, 255);
     background: url(./image/bois.png)no-repeat 50% 50%;
-  
     padding: 20px;
-    
+}
+#firstPlayer,#secondPlayer{
+  width: 100%;
+  height: 90px;
+  background-color:rgb(255, 255, 255);
+  background: url(./image/Player.png)no-repeat 50% 50%;
+  padding: 20px;
 }
