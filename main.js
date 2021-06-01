@@ -30,7 +30,7 @@ document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer ;
 document.querySelector('#globalSecondPlayer').textContent= globalSecondPlayer;
 document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
 document.querySelector('#roundSecondPlayer').textContent=  roundSecondPlayer;
-document.querySelector('#score').textContent= score;
+
 }
 
 //Détermine le score du round et passe au joueurs suivant si 1
@@ -40,9 +40,9 @@ function roll(){
   let randomnumber = Math.floor(Math.random() * 6) + 1; 
   let dice = document.querySelector('#dice');
   dice.style.display = 'block';
-  egg.src ="./image/" + randomnumber+'.svg';
+  egg.src ="./image/panier" + randomnumber+'.svg';
   dice.src ="./image/" + randomnumber+'.svg';
-  document.querySelector('#score').textContent= randomnumber; 
+  
 
   if ((activePlayer==1)&&(randomnumber>1)) { 
     roundFirstPlayer=roundFirstPlayer + randomnumber;
