@@ -19,8 +19,8 @@ function init() {
   roundSecondPlayer= 0;
   score=0;
   activePlayer=1;
-  Player2.style.opacity = "1";
-  Player1.style.opacity = "1";
+  Player2.style.opacity = "0";
+  Player1.style.opacity = "0";
   soundDice = 1;
   FirstPlayerWin=0;
   SecondPlayerWin=0;
@@ -49,7 +49,7 @@ function roll(){
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer; 
     Player1.style.opacity = "1";
     stars1.style.opacity ="1";
-    Player2.style.opacity = "0.5";
+    Player2.style.opacity = "0";
     stars2.style.opacity ="0";
 
    }else if ((activePlayer==1)&&(randomnumber==1)){
@@ -57,7 +57,7 @@ function roll(){
     roundFirstPlayer=0; 
     activePlayer=activePlayer+1; 
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
-    Player1.style.opacity = "0.5";
+    Player1.style.opacity = "0";
     stars1.style.opacity ="0";
     Player2.style.opacity = "1";
     stars2.style.opacity ="1";
@@ -66,7 +66,7 @@ function roll(){
     roundSecondPlayer=roundSecondPlayer + randomnumber;
     document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
     Player2.style.opacity = "1";
-    Player1.style.opacity = "0.5";
+    Player1.style.opacity = "0";
     stars1.style.opacity ="0";
     stars2.style.opacity ="1";
   }else { 
@@ -77,7 +77,7 @@ function roll(){
 
     Player1.style.opacity = "1";
     stars1.style.opacity ="1";
-    Player2.style.opacity = "0.5";
+    Player2.style.opacity = "0";
     stars2.style.opacity ="0";
 }
 }
@@ -92,7 +92,7 @@ function hold(){
   document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
   Player1.style.opacity = "1";
   stars1.style.opacity ="1";
-  Player2.style.opacity = "0.5";
+  Player2.style.opacity = "0";
   stars2.style.opacity ="0";
   activePlayer= 2
   nextround()
@@ -120,10 +120,10 @@ function nextround(){
   if (activePlayer==1) {
     Player1.style.opacity = "1";
     stars1.style.opacity ="1";
-    Player2.style.opacity = "0.5";
+    Player2.style.opacity = "0";
     stars2.style.opacity ="0";
   } else {
-    Player1.style.opacity = "0.5";
+    Player1.style.opacity = "0";
     stars1.style.opacity ="0";
     Player2.style.opacity = "1";
     stars2.style.opacity ="1";
