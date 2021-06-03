@@ -9,17 +9,20 @@ html{
     background-size:1300px;
   
 }
+
+
 body {
   background-color:transparent;
   scroll-behavior: smooth; /*Navigation douce dans la page*/
   font-family: 'Lato', sans-serif;
-  color: rgb(26, 24, 24);
+  color: white;
  
 }
 
 h1{
   font-size: 3em;
   text-align: center;
+  padding-top: 35px;
 }
 
 h2,h3,h4,h5,h6 footer ,header{
@@ -79,7 +82,7 @@ margin-top: 10px;
 
 /*-- réglages global --*/
 #globalFirstPlayer,#globalSecondPlayer,#roundFirstPlayer,#roundSecondPlayer{
-color: rgb(43, 42, 42);
+color: rgb(252, 247, 247);
 }
 
 #stars1,#stars2
@@ -103,6 +106,7 @@ color: rgb(43, 42, 42);
 .modal-content {
   background-color:rgb(255, 255, 255);
   margin: 15% auto; /* 15% from the top and centered */
+  color: black;
   padding: 20px;
   border: 1px solid  rgb(129, 62, 22);
   border-radius: 20px;
@@ -122,16 +126,17 @@ color: rgb(43, 42, 42);
 }
 
 .infoJoueur {
+  
     width: 100%;
     height: 120px;
-    background-color:rgb(255, 255, 255);
-    background: url(./image/bois.png)no-repeat 50% 50%;
+    /*background-color:rgb(255, 255, 255);*/
+    /*background: url(./image/bois.png)no-repeat 50% 50%;*/
     padding: 20px;
 }
 #firstPlayer,#secondPlayer{
   width: 100%;
   height: 90px;
-  background-color:rgb(255, 255, 255);
-  background: url(./image/Player.png)no-repeat 50% 50%;
+ /* background-color:rgb(255, 255, 255);*/
+ /*background: url(./image/Player.png)no-repeat 50% 50%;*/
   padding: 20px;
 }

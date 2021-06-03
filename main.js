@@ -48,9 +48,7 @@ function roll(){
     roundFirstPlayer=roundFirstPlayer + randomnumber;
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer; 
     Player1.style.opacity = "1";
-    stars1.style.opacity ="1";
     Player2.style.opacity = "0";
-    stars2.style.opacity ="0";
 
    }else if ((activePlayer==1)&&(randomnumber==1)){
     loosersound()
@@ -58,17 +56,13 @@ function roll(){
     activePlayer=activePlayer+1; 
     document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
     Player1.style.opacity = "0";
-    stars1.style.opacity ="0";
     Player2.style.opacity = "1";
-    stars2.style.opacity ="1";
 
    }else if ((activePlayer==2)&&(randomnumber>1)){
     roundSecondPlayer=roundSecondPlayer + randomnumber;
     document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
     Player2.style.opacity = "1";
     Player1.style.opacity = "0";
-    stars1.style.opacity ="0";
-    stars2.style.opacity ="1";
   }else { 
     loosersound()
     roundSecondPlayer=0;
@@ -76,9 +70,8 @@ function roll(){
     document.querySelector('#roundSecondPlayer').textContent= roundSecondPlayer;
 
     Player1.style.opacity = "1";
-    stars1.style.opacity ="1";
     Player2.style.opacity = "0";
-    stars2.style.opacity ="0";
+
 }
 }
 //Ajoute le score du round au global et passe au joueurs suivant
@@ -91,9 +84,7 @@ function hold(){
   document.querySelector('#globalFirstPlayer').textContent= globalFirstPlayer;
   document.querySelector('#roundFirstPlayer').textContent= roundFirstPlayer;
   Player1.style.opacity = "1";
-  stars1.style.opacity ="1";
   Player2.style.opacity = "0";
-  stars2.style.opacity ="0";
   activePlayer= 2
   nextround()
 } else if ((activePlayer==1)&&(globalFirstPlayer+roundFirstPlayer>=100)){
@@ -119,14 +110,10 @@ function hold(){
 function nextround(){
   if (activePlayer==1) {
     Player1.style.opacity = "1";
-    stars1.style.opacity ="1";
     Player2.style.opacity = "0";
-    stars2.style.opacity ="0";
   } else {
     Player1.style.opacity = "0";
-    stars1.style.opacity ="0";
     Player2.style.opacity = "1";
-    stars2.style.opacity ="1";
 }
 }
 //jeu suivant en cas de victoires
