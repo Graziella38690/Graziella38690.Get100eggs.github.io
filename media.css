@@ -1,0 +1,324 @@
+
+
+/**** Media queries****/
+
+@media(min-width: 320px) {
+    
+  }
+  
+@media(min-width: 576px) {
+  
+  }
+  @media (min-width: 768px) {
+    html{
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:768px;
+    }
+    h1{
+        font-size:1.5em;
+        text-align: center;
+        padding-top: 315px;
+        margin-bottom: 0px;
+          }
+          h2,h5{
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-size: 2vh;
+              }
+
+    .btn {
+     
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    #dice {
+        width: 100%;
+        height: 90px;
+        padding:0px;
+    }
+    #egg{
+        width: 100%;
+        height: 150px;
+        padding-left:0px;
+        padding-top:50px;
+    }
+    #firstPlayer{
+        width: 100%;
+        height: 90px;
+        padding-left: 10px;
+        padding-top: 0px;
+        font-size: 25px;
+    }
+    #secondPlayer{
+        width: 100%;
+        height: 90px;
+        padding-left:60px;
+        padding-top: 0px;
+        font-size: 25px;
+    }
+    
+    #Player1{
+        width: 80%;
+        height: 200px;
+        margin-left:0px;
+        margin-top: -25px;
+       
+    }
+    #Player2{
+        width: 80%;
+        height: 200px;
+        margin-left:65px;
+        margin-top: -20px;
+       
+    }
+    .infoJoueur1{
+        width: 120px;
+        height: 50px;
+        margin-left: 70px;
+        margin-top: -5px;
+       
+       
+       
+    }
+    .infoJoueur2{
+        width: 120px;
+        height: 50px;
+        margin-left: 110px;
+        margin-top: -10px;
+      
+    }
+
+    }
+
+  @media (min-width: 992px) {
+    html{
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:992px;
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+        padding-top: 200px;
+          }
+              h2,h5{
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                font-size: 3vh;
+                  }
+    .btn {
+        margin-top: 0px;
+    }
+    #dice {
+        width: 100%;
+        height: 135px;
+        padding-top:0px;
+    }
+    #egg{
+        width: 100%;
+        height: 150px;
+        padding-left: 0px;
+        padding-top:80px;
+    }
+    #firstPlayer{
+        width: 100%;
+        height: 90px;
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    #secondPlayer{
+        width: 100%;
+        height: 90px;
+        padding-left:60px;
+        padding-top: 0px;
+    }
+    
+    #Player1{
+        width: 100%;
+        height: 300px;
+        margin-left:0px;
+        margin-top: -30px;
+       
+    }
+    #Player2{
+        width: 100%;
+        height: 300px;
+        margin-left:40px;
+        margin-top: -20px;
+       
+    }
+    .infoJoueur1{
+        width: 120px;
+        height: 50px;
+        margin-left: 130px;
+        margin-top: -10px;
+        
+       
+    }
+    .infoJoueur2{
+        width: 120px;
+        height: 50px;
+        margin-left: 160px;
+        margin-top: -20px;
+        
+    }
+    }
+
+  @media(min-width: 1200.98px) {
+ html{
+    background: url(./image/fond.svg)no-repeat 50% 50%;
+    background-size:1200px;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 100px;
+      }
+
+      h2,h5{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 3.5vh;
+          }
+.btn {
+    margin-top: 0px;
+}
+#dice {
+    width: 100%;
+    height: 180px;
+    padding-top:8px;
+}
+#egg{
+    width: 100%;
+    height: 200px;
+    padding-left: 30px;
+    padding-top:100px;
+}
+#firstPlayer{
+    width: 100%;
+    height: 90px;
+    padding-left: 0px;
+    padding-top: 40px;
+}
+#secondPlayer{
+    width: 100%;
+    height: 90px;
+    padding-left:60px;
+    padding-top: 20px;
+}
+
+#Player1{
+    width: 100%;
+    height: 400px;
+    margin-left:0px;
+    margin-top: -40px;
+   
+}
+#Player2{
+    width: 100%;
+    height: 400px;
+    margin-left:40px;
+    margin-top: -25px;
+   
+}
+.infoJoueur1{
+    width: 120px;
+    height: 50px;
+    margin-left: 170px;
+    margin-top: -10px;
+    font-size: 1em;
+}
+.infoJoueur2{
+    width: 120px;
+    height: 50px;
+    margin-left: 225px;
+    margin-top: -25px;
+    font-size: 1em;
+}
+}
+
+@media (min-width: 1400px) {
+    
+        html{
+           background: url(./image/fond.svg)no-repeat 50% 50%;
+           background-size:1200px;
+       }
+       h1{
+           font-size: 3em;
+           text-align: center;
+           padding-top: 100px;
+             }
+       
+             h2,h5{
+               margin-bottom: 0px;
+               margin-top: 0px;
+               padding-top: 0px;
+               padding-bottom: 0px;
+               font-size: 3vh;
+                 }
+       .btn {
+           margin-top: 0px;
+       }
+       #dice {
+           width: 100%;
+           height: 165px;
+           padding-top:8px;
+       }
+       #egg{
+           width: 100%;
+           height: 200px;
+           padding-left: 30px;
+           padding-top:100px;
+       }
+       #firstPlayer{
+           width: 100%;
+           height: 100px;
+           padding-left: 110px;
+           padding-top: 30px;
+           font-size: 2rem;
+       }
+       #secondPlayer{
+           width: 100%;
+           height: 100px;
+           padding-left:0px;
+           padding-top: 20px;
+           font-size: 2rem;
+       }
+       
+       #Player1{
+           width: 100%;
+           height: 400px;
+           margin-left:60px;
+           margin-top: -50px;
+          
+       }
+       #Player2{
+           width: 100%;
+           height: 400px;
+           margin-left:0px;
+           margin-top: -45px;
+          
+       }
+       .infoJoueur1{
+           width: 120px;
+           height: 50px;
+           margin-left: 255px;
+           margin-top: -15px;
+           font-size: 1em;
+       }
+       .infoJoueur2{
+           width: 120px;
+           height: 50px;
+           margin-left: 200px;
+           margin-top: -25px;
+           font-size: 1em;
+       }
+       }
+
+
+

@@ -20,7 +20,7 @@ function init() {
   score=0;
   activePlayer=1;
   Player2.style.opacity = "0";
-  Player1.style.opacity = "0";
+  Player1.style.opacity = "1";
   soundDice = 1;
   FirstPlayerWin=0;
   SecondPlayerWin=0;
