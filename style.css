@@ -5,79 +5,19 @@ src: url("./font/Lato-Italic.ttf");
 }
 html{
     scroll-behavior: smooth; /*Navigation douce dans la page*/ 
-    background: url(./image/fond.svg)no-repeat 50% 50%;
-    background-size:1300px;
     
-  
 }
-
 
 body {
-  background-color:transparent;
-  scroll-behavior: smooth; /*Navigation douce dans la page*/
-  font-family: 'Lato', sans-serif;
-  color: rgb(0, 0, 0);
- 
-}
-
-h1{
-  font-size: 3em;
-  text-align: center;
-  padding-top: 35px;
-}
-
-h3,h4,h6 footer ,header{
-    text-align: center;
-    font-size: 2em;
-    padding: 0px;
-}
-
-/*-- Réglage des card --*/
-.card {
-  border: NONE;
-  background-color:transparent;
-  /*background-color: rgb(255, 255, 255, 0.9);*/
-  border: px solid  rgb(129, 62, 22);
-  border-radius: 25px;
-  height: 700px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    background: url(./image/fond.svg)no-repeat 50% 50%;
    
-}
-.elementscard img{
-  width: 100%;
-  height: 400px;
- 
-}
-.elementscard{
-  text-align : center;
-}
-
-#roll,#hold{
-width: 100px;
-height: 50px;
-margin: 0 auto;
-margin-top: 10px;
-}
-
-
-.infoJoueur1
-{
-  width: 120px;
-  height: 50px;
-  margin-left: 225px;
-  margin-top: -20px;
-  font-size: 1em;
-
-  }
-  .infoJoueur2
-  {
-    width: 120px;
-    height: 50px;
-    margin-left: 225px;
-    margin-top: -23px;
-    font-size: 1em;
-  
+    
     }
-  
+
+
+
 /*-- Réglage des boutons --*/
 .btn {
 	box-shadow:inset 0px 1px 0px -2px #a6827e;
@@ -87,8 +27,13 @@ margin-top: 10px;
 	border:4px solid #8b500c;
 	display:inline-block;
 	cursor:pointer;
-  margin-bottom: 10px;
-  margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  height: 25px;
+  text-align: center;
+  padding: 0px;
+  font-size: 12px;
+
 }
 
 .btn:hover {
@@ -101,55 +46,117 @@ margin-top: 10px;
 	position:relative;
 	top:1px;
 }
-
-/*-- réglages global --*/
-#globalFirstPlayer,#globalSecondPlayer,#roundFirstPlayer,#roundSecondPlayer{
-color: rgb(252, 247, 247);
-
-}
- #dice 
+.row
 {
+ padding-top: 2px;   
+}
+h1{
+    width: 520px;
+    height: 25px;
+    text-align:center;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+ 
+}
+
+#title{
+    width: 520px;
+    height: 20px;
+    text-align:center;
+    padding-right: 20px;
+    margin-top: 1px;
+    text-align: center;
+ 
+}
+
+#son{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+ 
+}
+#menujeu{
+   text-align: center;
+   height: 30px;
+   margin-top: 0px;
+   margin-bottom: 8px;
+margin-left: 8px;
+
+}
+
+#P1 ,#P2 {
+    width: 213px;
+    height: 30px;
+text-align: center;
+}
+
+#diceZone{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-left: 6px;
+  margin-top: 5px;
+}
+#dice {
     width: 100%;
-    height: 200px;
+    height: 65px;
+   
 }
-#egg
-{
+
+#imgp1{
+    width: 213px;
+    height: 100px;
+}
+#imgp2{
+    width: 213px;
+    height: 100px;
+}
+
+#Player1  {
+    background-color: transparent;
     width: 100%;
-    height: 300px;
+    height: 100px;
 }
-/*-- réglages modal --*/
-.modal-content {
-  background-color:rgb(255, 255, 255);
-  margin: 15% auto;
-  color: black;
-  padding: 20px;
-  border: 1px solid  rgb(129, 62, 22);
-  border-radius: 20px;
-  width: 80%; 
-  }
-  .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-.close:hover,
-.close:focus {
-  color: rgb(129, 62, 22);
-  text-decoration: none;
-  cursor: pointer;
+#Player2  {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
 }
 
+#egg {
+    width:100px;
+    height: 100px;
+}
 
-#firstPlayer{
-  width: 100%;
-  height: 90px;
-  padding: 40px;
+#imgegg {
+
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+#gfp,#gsp{
+    width: 213px;
+    height: 30px;
+    text-align: center;
+}
+#btnr{
+    width: 100px;
+    height: 30px;
+    text-align: center;
 }
 
 
-#secondPlayer{
-  width: 100%;
-  height: 90px;
-  padding: 20px;
+#rfp,#rsp{
+    width: 213px;
+    height: 30px;
+    text-align: center;
+}
+#btnh{
+    width: 100px;
+    height: 30px;
+    text-align: center;
 }
