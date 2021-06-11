@@ -1,23 +1,38 @@
 
 @media (min-width: 320px) and (orientation: landscape) {
-    
     body {
        
+        background: url(./image/fond.svg)no-repeat 50% 50%;
         background-size:320px;
+    
+    
+        
         }
+   
     }
 
       
 
 @media(min-width: 320px) {
- 
+    body {
+       
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:320px;
+    
+    
+        
+        }
 }
 
 
 @media only screen and (min-width: 576px) and (orientation: landscape) {
     body {
        
-        background-size:500px;
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:576px;
+    
+    
+        
         }
     }
 
@@ -25,17 +40,27 @@
 @media(min-width: 576px) {
     body {
        
+        background: url(./image/fond.svg)no-repeat 50% 50%;
         background-size:576px;
-            
+    
+    
         
         }
+
 }
 
 
 
 @media only screen and (min-width: 768px) and (orientation: landscape) {
+    body {
+       
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:760px;
     
-
+    
+        
+        }
+   
 }
 
 
@@ -43,8 +68,10 @@
 @media (min-width: 768px) {
     body {
        
-        background-size:760px;
-            
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:768px;
+    
+    
         
         }
 }
@@ -52,19 +79,29 @@
 @media (min-width: 992px) {
     body {
        
-        background-size:990px;
-            
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:992px;  
         
         }
 }
 
 @media(min-width: 1200.98px) {
  
-
+    body {
+       
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:1200px;   
+        
+        }
 
   }
 
 @media(min-width: 1400px) {
 
-   
+    body {
+       
+        background: url(./image/fond.svg)no-repeat 50% 50%;
+        background-size:1400px; 
+        
+        }
   }
