@@ -104,3 +104,41 @@ margin-left: 12%;
    width: 20px;
     height: auto;
 }
+
+/*-- Rules Modal Style --*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    ;
+}
+
+.modal-content {
+    background-color: #c2ab91;;
+    border-radius: 2vh;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #57422b;
+    width: 80%;
+    color: rgb(0, 0, 0);
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(48, 47, 47);
+    text-decoration: none;
+    cursor: pointer;
+}
